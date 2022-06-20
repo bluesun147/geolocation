@@ -8,11 +8,11 @@ const errorCallback = (error) => {
 };
 
 // 먼저 브라우저가 위치 권한 요청
-//navigator.geolocation.getCurrentPosition(successCallback, errorCallback); // 3개의 argument
+navigator.geolocation.getCurrentPosition(successCallback, errorCallback); // 3개의 argument
 
 // id를 리턴
 // watchPosition method allows user to continues getting update as the user walks around.   
-// 위치 바뀔때마다 watch
-const watchId = navigator.geolocation.watchPosition(successCallback, errorCallback, )
+// // 위치 바뀔때마다 watch
+// const watchId = navigator.geolocation.watchPosition(successCallback, errorCallback, )
 
-navigator.geolocation.clearWatch(watchId);
+// navigator.geolocation.clearWatch(watchId);
